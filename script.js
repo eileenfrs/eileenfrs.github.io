@@ -76,20 +76,20 @@ jQuery(function($) {
 
 
     // thank you message after form submission
-    $('#contact-form').on('submit', function(event) {
-        event.preventDefault();
+    // $('#contact-form').on('submit', function(event) {
+    //     event.preventDefault();
         
-        $.ajax({
-            url: $(this).attr('action'),
-            method: $(this).attr('method'),
-            data: $(this).serialize(),
-            success: function(response) {
-                $('#contact-form').hide();
-                $('#thank-you-message').show();
-            },
-            error: function(xhr, status, error) {
-                alert('Something went wrong. Please try again.');
-            }
-        });
-    });
+    //     $.ajax({
+    //         url: $(this).attr('action'),
+    //         method: $(this).attr('method'),
+    //         data: $(this).serialize(),
+    //         success: function(response) {
+    //             $('#contact-form').hide();
+    //             $('#thank-you-message').show();
+    //         },
+    //         error: function(xhr, status, error) {
+    //             alert('Something went wrong. Please try again.');
+    //         }
+    //     });
+    // });
 });
