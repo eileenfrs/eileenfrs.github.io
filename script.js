@@ -73,17 +73,4 @@ jQuery(function($) {
 		$navLinks.toggleClass('show');
 		$(this).toggleClass('menu-clicked');
 	});
-
-
-    // email validation
-    $('form').on('submit', function(event) {
-        var email = $('#mail').val();
-        var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-        if (!emailPattern.test(email)) {
-            alert('Please enter a valid email address.');
-            $('#mail').focus();
-            event.preventDefault();
-        }
-    });
 });
