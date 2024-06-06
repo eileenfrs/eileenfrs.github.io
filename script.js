@@ -75,21 +75,15 @@ jQuery(function($) {
 	});
 
 
-    // thank you message after form submission
-    // $('#contact-form').on('submit', function(event) {
-    //     event.preventDefault();
-        
-    //     $.ajax({
-    //         url: $(this).attr('action'),
-    //         method: $(this).attr('method'),
-    //         data: $(this).serialize(),
-    //         success: function(response) {
-    //             $('#contact-form').hide();
-    //             $('#thank-you-message').show();
-    //         },
-    //         error: function(xhr, status, error) {
-    //             alert('Something went wrong. Please try again.');
-    //         }
-    //     });
-    // });
+    // email validation
+    $('form').on('submit', function(event) {
+        var email = $('#mail').val();
+        var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (!emailPattern.test(email)) {
+            alert('Please enter a valid email address.');
+            $('#mail').focus();
+            event.preventDefault();
+        }
+    });
 });
