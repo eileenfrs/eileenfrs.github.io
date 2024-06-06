@@ -520,13 +520,35 @@ svg path {
   border: 1px solid var(--white);
 }
 
-
 /* footer section
 ================================================== */
 
 footer p {
   text-align: center;
   padding: 1.042vw;
+}
+
+/* thanks page */
+#thanks-message {
+  height: calc(100vh - 16.7vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#thanks-message h2,
+#thanks-message h4 {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.thank-you-message {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.thank-you-message a {
+  font-weight: 600;
 }
 
 /* ======================== 
