@@ -557,15 +557,13 @@ footer p {
 @media only screen and (max-width: 768px) { 
 
   body {
-    font-size: 3vw;
+    font-size: 4.5vw;
   }
 
-  /* 35px */
   h1 {
-  font-size: 4.823vw;
+  font-size: 5.823vw;
   }
   
-  /* 35px */
   h2 {
     font-size: 4.823vw;
     font-family: var(--la-obrige);
@@ -573,21 +571,19 @@ footer p {
     letter-spacing: 0.13vw;
   }
   
-  /* 28px */
   h3 {
-    font-size: 3.458vw;
+    font-size: 5.458vw;
     margin: 0;
   }
   
-  /* 1.042vw */
   h4 {
-    font-size: 3.042vw;
+    font-size: 3.542vw;
     letter-spacing: 0.104vw;
     margin: 0;
   }
   
   h5, h6 {
-    font-size: 2.55vw;
+    font-size: 5.55vw;
     font-weight: 600;
     margin: 0;
   }
@@ -601,7 +597,7 @@ footer p {
   }
 
   .intro p {
-    font-size: 3.5vw;
+    font-size: 4.5vw;
   }
 
   .griddy {
@@ -621,6 +617,11 @@ footer p {
     margin: 0 auto;
 }
 
+  .boxes-wrapper {
+    padding: 2.563vw 5.208vw;
+    gap: 2.042vw;
+  }
+
   .works-wrapper {
     padding: 5.208vw;
   }
@@ -632,12 +633,18 @@ footer p {
   .works-box {
     flex-basis: auto;
     max-width: none;
+    padding: 2.542vw;
+    gap: 2.542vw;
+  }
+
+  .works-box a {
+    padding: 0.521vw 2.042vw;
   }
 
   .form-item input,
   .form-item textarea {
-    font-size: 2.56vw;
-    padding: 1.221vw;
+    font-size: 3.26vw;
+    padding: 1.621vw;
     margin: 0.26vw 0px 1.677vw;
   }
 
@@ -646,7 +653,7 @@ footer p {
   }
 
   .submit-button button {
-    font-size: 2.545vw;
+    font-size: 3.26vw;
     padding: 1vw 3.042vw;
   }
 
