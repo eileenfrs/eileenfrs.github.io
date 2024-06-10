@@ -440,7 +440,7 @@ svg path {
 .works-wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 2.604vw;
+  gap: 1.604vw;
   padding: 1.042vw 5.208vw;
 }
 
